@@ -9,14 +9,24 @@
 import UIKit
 import Gloss
 class ViewController: UIViewController {
-    var orders: Orders?
-    var sum = 0.0
-    var totalBags = 0
-    @IBOutlet weak var napoleanSalesLabel: UILabel!
-    
-    @IBOutlet weak var totalBagsLabel: UILabel!
+    fileprivate var orders: Orders?
+    fileprivate var sum = 0.0
+    fileprivate var totalBags = 0
+    @IBOutlet fileprivate weak var napoleanSalesLabel: UILabel!
+    @IBOutlet fileprivate weak var totalBagsLabel: UILabel!
+}
+
+// MARK: -View setup
+extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        getInfo()
+    }
+}
+
+// MARK: -Helpers
+extension ViewController {
+    fileprivate func getInfo() {
         PipelinesAPI.getSales(success: { (json) in
             if let orders = Orders.init(json: json) {
                 for order in orders.orders! {
@@ -43,17 +53,5 @@ class ViewController: UIViewController {
         }) { (error) in
             //handle error
         }
-        
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
