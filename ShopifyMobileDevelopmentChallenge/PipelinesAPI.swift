@@ -1,4 +1,4 @@
-//
+
 //  PipelinesAPI.swift
 //  ShopifyMobileDevelopmentChallenge
 //
@@ -17,7 +17,6 @@ class PipelinesAPI {
             .responseJSON { response in
                 if let responseJSON = response.result.value as? JSON {
                     success?(responseJSON)
-                    print(responseJSON)
                 } else if let data = response.data {
                     //error handling here
                     

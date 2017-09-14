@@ -34,7 +34,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m34-0I-wOH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m34-0I-wOH">
                                 <rect key="frame" x="166" y="457" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -46,10 +46,15 @@
                             <constraint firstItem="Ae3-ce-ODT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfN-Cg-4Yh"/>
                             <constraint firstItem="m34-0I-wOH" firstAttribute="top" secondItem="xqa-sq-tdY" secondAttribute="bottom" constant="8" id="X2Z-by-dr6"/>
                             <constraint firstItem="Ae3-ce-ODT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xbv-ly-G8x"/>
+                            <constraint firstItem="m34-0I-wOH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aRb-yq-b8D"/>
                             <constraint firstItem="xqa-sq-tdY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mrr-AU-M1H"/>
                             <constraint firstItem="xqa-sq-tdY" firstAttribute="top" secondItem="Ae3-ce-ODT" secondAttribute="bottom" constant="16" id="tVe-Ez-pTN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="napoleanSalesLabel" destination="xqa-sq-tdY" id="WF7-fM-xKR"/>
+                        <outlet property="totalBagsLabel" destination="m34-0I-wOH" id="Wis-RL-Csq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

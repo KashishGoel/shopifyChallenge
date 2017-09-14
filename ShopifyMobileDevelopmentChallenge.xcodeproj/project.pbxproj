@@ -14,6 +14,10 @@
 		3650368B1F69F070005055E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365036891F69F070005055E3 /* LaunchScreen.storyboard */; };
 		368FAE341F6A1CA6000CD84D /* PipelinesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368FAE331F6A1CA6000CD84D /* PipelinesAPI.swift */; };
 		368FAE361F6A1CF6000CD84D /* PipelinesAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368FAE351F6A1CF6000CD84D /* PipelinesAPIRouter.swift */; };
+		368FAE381F6A210A000CD84D /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368FAE371F6A210A000CD84D /* Orders.swift */; };
+		368FAE3A1F6A2167000CD84D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368FAE391F6A2167000CD84D /* Order.swift */; };
+		368FAE3C1F6A221C000CD84D /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368FAE3B1F6A221C000CD84D /* Customer.swift */; };
+		368FAE3E1F6A2239000CD84D /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368FAE3D1F6A2239000CD84D /* Items.swift */; };
 		BCD9FC25EDFD2207893EE3E4 /* Pods_ShopifyMobileDevelopmentChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91354698C39A6D17E056E59F /* Pods_ShopifyMobileDevelopmentChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		3650368C1F69F070005055E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368FAE331F6A1CA6000CD84D /* PipelinesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipelinesAPI.swift; sourceTree = "<group>"; };
 		368FAE351F6A1CF6000CD84D /* PipelinesAPIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipelinesAPIRouter.swift; sourceTree = "<group>"; };
+		368FAE371F6A210A000CD84D /* Orders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		368FAE391F6A2167000CD84D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		368FAE3B1F6A221C000CD84D /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		368FAE3D1F6A2239000CD84D /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		4988B31B1E14A3A3E9CD5CEA /* Pods-ShopifyMobileDevelopmentChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopifyMobileDevelopmentChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShopifyMobileDevelopmentChallenge/Pods-ShopifyMobileDevelopmentChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		91354698C39A6D17E056E59F /* Pods_ShopifyMobileDevelopmentChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopifyMobileDevelopmentChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9623A4C28E033D4FFF74E463 /* Pods-ShopifyMobileDevelopmentChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopifyMobileDevelopmentChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShopifyMobileDevelopmentChallenge/Pods-ShopifyMobileDevelopmentChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 			children = (
 				365036801F69F070005055E3 /* AppDelegate.swift */,
 				365036821F69F070005055E3 /* ViewController.swift */,
+				368FAE371F6A210A000CD84D /* Orders.swift */,
+				368FAE391F6A2167000CD84D /* Order.swift */,
+				368FAE3B1F6A221C000CD84D /* Customer.swift */,
+				368FAE3D1F6A2239000CD84D /* Items.swift */,
 				368FAE331F6A1CA6000CD84D /* PipelinesAPI.swift */,
 				368FAE351F6A1CF6000CD84D /* PipelinesAPIRouter.swift */,
 				365036841F69F070005055E3 /* Main.storyboard */,
@@ -226,10 +238,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368FAE3E1F6A2239000CD84D /* Items.swift in Sources */,
+				368FAE3A1F6A2167000CD84D /* Order.swift in Sources */,
+				368FAE3C1F6A221C000CD84D /* Customer.swift in Sources */,
 				365036831F69F070005055E3 /* ViewController.swift in Sources */,
 				368FAE341F6A1CA6000CD84D /* PipelinesAPI.swift in Sources */,
 				365036811F69F070005055E3 /* AppDelegate.swift in Sources */,
 				368FAE361F6A1CF6000CD84D /* PipelinesAPIRouter.swift in Sources */,
+				368FAE381F6A210A000CD84D /* Orders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
