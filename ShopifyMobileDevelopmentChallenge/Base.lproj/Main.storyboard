@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShopifyMobileDevelopmentChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopify" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-ce-ODT">
+                                <rect key="frame" x="37" y="254.5" width="300" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="sgp-iY-kMe"/>
+                                    <constraint firstAttribute="width" constant="300" id="uli-Um-JS8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqa-sq-tdY">
+                                <rect key="frame" x="166" y="428" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m34-0I-wOH">
+                                <rect key="frame" x="166" y="457" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ae3-ce-ODT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfN-Cg-4Yh"/>
+                            <constraint firstItem="m34-0I-wOH" firstAttribute="top" secondItem="xqa-sq-tdY" secondAttribute="bottom" constant="8" id="X2Z-by-dr6"/>
+                            <constraint firstItem="Ae3-ce-ODT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xbv-ly-G8x"/>
+                            <constraint firstItem="xqa-sq-tdY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mrr-AU-M1H"/>
+                            <constraint firstItem="xqa-sq-tdY" firstAttribute="top" secondItem="Ae3-ce-ODT" secondAttribute="bottom" constant="16" id="tVe-Ez-pTN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shopify" width="300" height="158"/>
+    </resources>
+</document>
